@@ -1,5 +1,10 @@
 <script lang="ts" setup>
 import logoSVG from "../assets/logo.svg";
+import { useI18n } from "vue-i18n";
+import { I18N } from "../i18n";
+import { ref } from "vue";
+const i18n = useI18n();
+const currentLang = ref(i18n.locale);
 </script>
 
 <template>
@@ -12,7 +17,15 @@ import logoSVG from "../assets/logo.svg";
         <div class="telegram">
           <i class="bx bxl-telegram bx-tada"></i>
         </div>
-        <div class="lang">中文</div>
+        <select v-model="$i18n.locale">
+          <option
+            v-for="locale in $i18n.availableLocales"
+            :key="`locale-${locale}`"
+            :value="locale"
+          >
+            {{ locale }}
+          </option>
+        </select>
       </div>
     </nav>
   </div>
@@ -43,6 +56,16 @@ import logoSVG from "../assets/logo.svg";
           font-size: 28px;
           color: #a3a3a3;
         }
+      }
+      select {
+        margin-left: 10px;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        background-color: #f9fbfb;
+        border-radius: 2px;
+        color: #232323;
+        padding: 2px 15px;
       }
     }
   }

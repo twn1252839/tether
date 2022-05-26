@@ -21,7 +21,6 @@ watch(i18n.locale, () => {
   typeText();
 });
 const typeText = () => {
-  // If the text is english, speed up typing speed
   if (charIndex < texts[textIndex].length) {
     typeStatus.value = true;
     typeValue.value += texts[textIndex].charAt(charIndex++);
