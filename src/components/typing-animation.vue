@@ -66,19 +66,23 @@ onUnmounted(() => clearTimeout(timeOut!));
 <style lang="scss">
 @import "../scss/global.scss";
 .typing {
-  height: 4rem;
+  height: 6rem;
   display: flex;
   margin-top: 10px;
+  @include phone {
+    height: 3.6rem;
+  }
   span.typed-text {
     color: #232323;
-    font-size: 2rem;
+    font-size: 3rem;
     position: relative;
     white-space: pre-line;
     height: 3rem;
     display: inline-table;
-    line-height: 2rem;
+    line-height: 3rem;
     @include phone {
       font-size: 1.8rem;
+      line-height: 1.8rem;
     }
     @include pad {
       padding: 0 10px;
@@ -88,7 +92,7 @@ onUnmounted(() => clearTimeout(timeOut!));
       position: absolute;
       display: inline-block;
       width: 4px;
-      height: 2rem;
+      height: 3rem;
       @include phone {
         height: 1.8rem;
       }
