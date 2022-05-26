@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import headerVue from "./components/header.vue";
 import blockOneVue from "./components/block-one.vue";
+import blockTwoVue from "./components/block-two.vue";
 </script>
 <template>
   <header-vue></header-vue>
   <div class="contents">
     <block-one-vue></block-one-vue>
+    <block-two-vue></block-two-vue>
   </div>
 </template>
 <style lang="scss">
@@ -19,11 +21,12 @@ import blockOneVue from "./components/block-one.vue";
 }
 body {
   background-color: #f9fbfb;
+  max-width: 100vw;
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 .contents {
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
-  overflow-x: hidden;
 }
 </style>

@@ -32,7 +32,7 @@ const subtitles = [
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../scss/global.scss";
 .blockOne {
   padding: 0 180px;
@@ -60,16 +60,17 @@ const subtitles = [
     @include phone {
       background-size: 100%;
       padding: 2%;
-      padding-bottom: 200px;
     }
     .intro {
       margin: auto;
       display: flex;
       width: 50%;
-      height: 100%;
+      height: 720px;
       flex-direction: column;
+      justify-content: center;
       @include pad {
         width: 100%;
+        height: auto;
       }
       h1 {
         font-size: 4rem;
