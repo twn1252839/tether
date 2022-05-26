@@ -1,52 +1,48 @@
 <script lang="ts" setup>
-import backgroundImage from "../assets/bg2.svg";
+import backgroundImage from "../assets/bg3.svg";
 const backgroundStyle = `background-image: url( ${backgroundImage} )`;
 </script>
 
 <template>
-  <div class="blockTwo">
+  <div class="blockThree">
     <div class="contain">
-      <div class="left" :style="backgroundStyle"></div>
-      <div class="right">
-        <h1 v-t="'blockTwo.title'"></h1>
-        <p v-t="'blockTwo.content'"></p>
+      <div class="left">
+        <h1 v-t="'blockThree.title'"></h1>
+        <p v-t="'blockThree.content'"></p>
       </div>
+      <div class="right" :style="backgroundStyle"></div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "../scss/global.scss";
-.blockTwo {
-  background-color: #ffffff;
+.blockThree {
+  background: linear-gradient(180deg, #f4fafa 0%, #e8f3f3 100%);
   .contain {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    .left {
-      background-repeat: no-repeat;
-      background-size: contain;
+    justify-content: space-between;
+    & > div {
+      width: 50%;
       @include pad {
-        height: 100vw;
+        width: 100%;
       }
     }
-    .right {
-      height: 880px;
+    .left {
+      height: 720px;
       margin: auto;
       display: flex;
       max-width: 482px;
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
-      @include pad {
-        margin: 24px 24px 30px;
-        align-items: center;
-        width: 100vw;
-      }
+      margin: 24px 24px 30px;
       h1 {
         font-size: 2.5rem;
         line-height: 48px;
-        @include phone {
+        @include pad {
           font-size: 1.5rem;
         }
       }
@@ -57,11 +53,11 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
         line-height: 28px;
       }
     }
-
-    & > div {
-      width: 50%;
+    .right {
+      background-repeat: no-repeat;
+      background-size: contain;
       @include pad {
-        width: 100%;
+        height: 100vw;
       }
     }
   }

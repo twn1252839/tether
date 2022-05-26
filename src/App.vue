@@ -2,12 +2,14 @@
 import headerVue from "./components/header.vue";
 import blockOneVue from "./components/block-one.vue";
 import blockTwoVue from "./components/block-two.vue";
+import blockThreeVue from "./components/block-three.vue";
 </script>
 <template>
   <header-vue></header-vue>
   <div class="contents">
     <block-one-vue></block-one-vue>
     <block-two-vue></block-two-vue>
+    <block-three-vue></block-three-vue>
   </div>
 </template>
 <style lang="scss">

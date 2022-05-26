@@ -9,5 +9,7 @@
   "blockOne.input.emailAddress": "郵箱地址",
   "blockOne.button.connectWallet": "連結錢包",
   "blockTwo.title": "推動貨幣的未來",
-  "blockTwo.content": "Tether 代幣是使用最廣泛的穩定幣，在數字代幣領域開創了這一概念。作為傳統金融體系的顛覆者和傳統貨幣數字化使用的開拓者，Tether 代幣支持並支持整個區塊鏈領域不斷增長的企業和創新。 Tether 代幣作為建立在多個區塊鏈上的數字代幣存在。"
+  "blockTwo.content": "Tether 代幣是使用最廣泛的穩定幣，在數字代幣領域開創了這一概念。作為傳統金融體系的顛覆者和傳統貨幣數字化使用的開拓者，Tether 代幣支持並支持整個區塊鏈領域不斷增長的企業和創新。 Tether 代幣作為建立在多個區塊鏈上的數字代幣存在。",
+  "blockThree.title": "100% 支持且完全透明",
+  "blockThree.content": "所有 Tether 代幣 (USD₮) 與匹配的法定貨幣以 1 比 1 的比例掛鉤，並 100% 由 Tether 的儲備金支持。我們發布當前總資產和儲備的每日記錄。"
 }
