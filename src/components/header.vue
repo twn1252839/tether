@@ -19,14 +19,19 @@ import logoSVG from "../assets/logo.svg";
 </template>
 
 <style lang="scss">
+@import "../scss/global.scss";
 .header {
   width: 100vw;
   nav {
-    width: 80%;
-    margin: 30px auto;
+    width: 60%;
+    margin: 38px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include phone {
+      min-width: 90%;
+    }
 
     .links {
       display: flex;
