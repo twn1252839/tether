@@ -45,6 +45,12 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
     padding: 20px 120px;
     @include pad {
       padding: 50px;
+      flex-direction: column;
+    }
+    @include phone {
+      background-size: 100%;
+      padding: 2%;
+      padding-bottom: 200px;
     }
     .intro {
       margin: auto;
@@ -52,6 +58,9 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
       width: 50%;
       height: 100%;
       flex-direction: column;
+      @include pad {
+        width: 100%;
+      }
       h1 {
         font-size: 4rem;
         font-weight: 600;
@@ -82,12 +91,35 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
         font-weight: 500;
         border-radius: 30px;
       }
+
+      @include phone {
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        input {
+          width: 100%;
+        }
+        button {
+          border: none;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
     }
     .circle {
       width: 50%;
+      @include pad {
+        width: 100%;
+      }
       img {
         width: 98%;
         height: auto;
+      }
+      @include phone {
+        margin-top: 40px;
       }
     }
   }
