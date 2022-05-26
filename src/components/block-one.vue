@@ -27,7 +27,7 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
 .blockOne {
   padding: 0 180px;
   @include laptop {
-    padding: 60px;
+    padding: 55px;
   }
   @include pad {
     padding: 0 50px;
