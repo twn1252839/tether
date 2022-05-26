@@ -1,9 +1,17 @@
 <script lang="ts" setup>
 import RoundPNG from "../assets/round.png";
 import backgroundImage from "../assets/bg1.svg";
+import typingAnimationVue from "./typing-animation.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 const backgroundStyle = `background-image: url( ${backgroundImage} )`;
+const subtitles = [
+  "blockOne.subtitle.1",
+  "blockOne.subtitle.2",
+  "blockOne.subtitle.3",
+  "blockOne.subtitle.4",
+  "blockOne.subtitle.5",
+];
 </script>
 
 <template>
@@ -11,7 +19,9 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
     <div class="contain" :style="backgroundStyle">
       <div class="intro">
         <h1 v-t="'blockOne.title'"></h1>
-        <h2 v-t="'blockOne.subtitle.1'"></h2>
+        <typing-animation-vue
+          :i18n-text-keys="subtitles"
+        ></typing-animation-vue>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <button v-t="'blockOne.button.connectWallet'"></button>
       </div>
