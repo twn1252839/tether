@@ -10,7 +10,9 @@ const { t } = useI18n();
         <h1>{{ t("blockFour.title") }}</h1>
         <p>{{ t("blockFour.content") }}</p>
       </div>
-      <logo-chain-vue></logo-chain-vue>
+      <div style="width: 100vw; overflow: hidden">
+        <logo-chain-vue></logo-chain-vue>
+      </div>
     </div>
   </div>
 </template>
