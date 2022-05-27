@@ -1,9 +1,6 @@
 <script lang="ts" setup>
 import { reactive } from "vue";
 import { useI18n } from "vue-i18n";
-import svg1 from "../assets/cards/1.svg";
-import svg2 from "../assets/cards/2.svg";
-import svg3 from "../assets/cards/3.svg";
 const { t } = useI18n();
 
 interface card {
@@ -15,17 +12,17 @@ interface card {
 const cardsContent = reactive<Array<card>>([
   {
     title: "blockFive.card.1.title",
-    svgSource: svg1,
+    svgSource: "card1",
     content: "blockFive.card.1.content",
   },
   {
     title: "blockFive.card.2.title",
-    svgSource: svg2,
+    svgSource: "card2",
     content: "blockFive.card.2.content",
   },
   {
     title: "blockFive.card.2.title",
-    svgSource: svg3,
+    svgSource: "card3",
     content: "blockFive.card.2.content",
   },
 ]);
@@ -42,7 +39,6 @@ const cardsContent = reactive<Array<card>>([
         <div class="card" v-for="card in cardsContent">
           <div class="titleBar">
             <h2>{{ t(card.title) }}</h2>
-            <img :src="card.content" alt="illus" />
           </div>
           <span> {{ t(card.content) }}</span>
         </div>
