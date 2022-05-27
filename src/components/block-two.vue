@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import { useI18n } from "vue-i18n";
 import backgroundImage from "../assets/bg2.svg";
 const backgroundStyle = `background-image: url( ${backgroundImage} )`;
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,8 +10,8 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
     <div class="contain">
       <div class="left" :style="backgroundStyle"></div>
       <div class="right">
-        <h1 v-t="'blockTwo.title'"></h1>
-        <p v-t="'blockTwo.content'"></p>
+        <h1>{{ t("blockTwo.title") }}</h1>
+        <p>{{ t("blockTwo.content") }}</p>
       </div>
     </div>
   </div>
