@@ -3,6 +3,7 @@ import headerVue from "./components/header.vue";
 import blockOneVue from "./components/block-one.vue";
 import blockTwoVue from "./components/block-two.vue";
 import blockThreeVue from "./components/block-three.vue";
+import blockFourVue from "./components/block-four.vue";
 </script>
 <template>
   <header-vue></header-vue>
@@ -10,6 +11,7 @@ import blockThreeVue from "./components/block-three.vue";
     <block-one-vue></block-one-vue>
     <block-two-vue></block-two-vue>
     <block-three-vue></block-three-vue>
+    <block-four-vue></block-four-vue>
   </div>
 </template>
 <style lang="scss">
