@@ -46,10 +46,11 @@ const { t } = useI18n();
         margin: 24px 24px 30px;
         align-items: center;
         width: 100vw;
+        height: auto;
       }
       h1 {
         font-size: 2.5rem;
-        line-height: 48px;
+        line-height: 32px;
         @include phone {
           font-size: 1.5rem;
         }
