@@ -20,7 +20,7 @@ const { t } = useI18n();
 <style lang="scss" scoped>
 @import "../scss/global.scss";
 .blockTwo {
-  background-color: #d9f0f0;
+  background-color: linear-gradient(180deg, #f4fafa 0%, #e8f3f3 100%);
   .contain {
     width: 100%;
     display: flex;
@@ -35,7 +35,7 @@ const { t } = useI18n();
       }
     }
     .right {
-      height: 880px;
+      height: 720px;
       margin: auto;
       display: flex;
       max-width: 482px;
