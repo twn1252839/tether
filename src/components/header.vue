@@ -1,10 +1,5 @@
 <script lang="ts" setup>
 import logoSVG from "../assets/logo.svg";
-import { useI18n } from "vue-i18n";
-import { I18N } from "../i18n";
-import { ref } from "vue";
-const i18n = useI18n();
-const currentLang = ref(i18n.locale);
 </script>
 
 <template>

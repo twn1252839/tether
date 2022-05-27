@@ -43,9 +43,12 @@ const { t } = useI18n();
     flex-wrap: wrap;
     .left {
       background-repeat: no-repeat;
-      background-size: 100%;
       background-position: right;
+      @include laptop {
+        height: 720px;
+      }
       @include pad {
+        background-size: contain;
         height: 100vw;
       }
     }

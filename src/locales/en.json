@@ -13,5 +13,12 @@
   "blockThree.title": "100% backed and fully transparent",
   "blockThree.content": "All Tether tokens (USD₮) are pegged at 1-to-1 with a matching fiat currency and are backed 100% by Tether's reserves. We publish a daily record of the current total assets and reserves.",
   "blockFour.title": "Widespread adoption",
-  "blockFour.content": "From being the first, to the most used, stablecoin, and one of the most traded tokens by volume, Tether tokens have come a long way. Tether tokens are today the most widely adopted stablecoins across major exchanges, OTC desks, and wallets, including:"
+  "blockFour.content": "From being the first, to the most used, stablecoin, and one of the most traded tokens by volume, Tether tokens have come a long way. Tether tokens are today the most widely adopted stablecoins across major exchanges, OTC desks, and wallets, including:",
+  "blockFive.title": "The token that is disrupting the global financial industry",
+  "blockFive.card.1.title": "Tether for Individuals",
+  "blockFive.card.1.content": "Tether tokens offer exceptional liquidity on tier one exchanges giving traders the ability to take advantage of arbitrage opportunities in the fastest time possible.",
+  "blockFive.card.2.title": "Tether for Merchants",
+  "blockFive.card.2.content": "For merchants, integrating Tether tokens opens up an array of opportunities for consumers to purchase products and services.",
+  "blockFive.card.3.title": "Tether for Exchanges",
+  "blockFive.card.3.content": "Tether tokens play a pivotal role in the digital token ecosystem and are the most actively traded in terms of 24-hour volume."
 }
