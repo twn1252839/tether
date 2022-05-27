@@ -33,6 +33,9 @@ const { t } = useI18n();
         margin-top: 58px;
         font-size: 1.875rem;
         text-align: center;
+        @include phone {
+          font-size: 1.375rem;
+        }
       }
       p {
         margin-top: 28px;
