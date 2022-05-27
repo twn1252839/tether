@@ -13,17 +13,22 @@ const { t } = useI18n();
   </div>
 </template>
 <style lang="scss">
+@import "../scss/global.scss";
 .blockFour {
   background-color: #f9fbfb;
   padding: 30px;
   display: flex;
   justify-content: center;
   .contain {
+    max-width: 1440px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .text {
-      width: 1440px;
-      max-width: 1440px;
       padding: 20px;
       max-width: 570px;
+
       h1 {
         margin-top: 58px;
         font-size: 1.875rem;

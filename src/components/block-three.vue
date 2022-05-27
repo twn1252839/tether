@@ -6,7 +6,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="blockTwo">
+  <div class="blockThree">
     <div class="contain">
       <div class="left" :style="backgroundStyle"></div>
       <div class="right">
@@ -19,7 +19,7 @@ const { t } = useI18n();
 
 <style lang="scss" scoped>
 @import "../scss/global.scss";
-.blockTwo {
+.blockThree {
   background-color: linear-gradient(180deg, #f4fafa 0%, #e8f3f3 100%);
   .contain {
     width: 100%;
