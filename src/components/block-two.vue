@@ -1,33 +1,50 @@
 <script lang="ts" setup>
-import { useI18n } from "vue-i18n";
 import backgroundImage from "../assets/bg2.svg";
+import { useI18n } from "vue-i18n";
 const backgroundStyle = `background-image: url( ${backgroundImage} )`;
 const { t } = useI18n();
 </script>
 
 <template>
   <div class="blockTwo">
+    <div
+      class="block"
+      style="
+        flex-grow: 1;
+        opacity: 0.05;
+        background: linear-gradient(274.85deg, #16a5a5 8.7%, #3fc6c6 86.86%);
+      "
+    ></div>
     <div class="contain">
       <div class="left" :style="backgroundStyle"></div>
       <div class="right">
-        <h1>{{ t("blockTwo.title") }}</h1>
-        <p>{{ t("blockTwo.content") }}</p>
+        <div class="text">
+          <h1>{{ t("blockTwo.title") }}</h1>
+          <p>{{ t("blockTwo.content") }}</p>
+        </div>
       </div>
     </div>
+    <div class="block" style="flex-grow: 1"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "../scss/global.scss";
 .blockTwo {
-  background-color: #ffffff;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
   .contain {
-    width: 100%;
+    width: 1440px;
+    max-width: 1440px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     .left {
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100%;
+      background-position: right;
       @include pad {
         height: 100vw;
       }
@@ -36,28 +53,26 @@ const { t } = useI18n();
       height: 720px;
       margin: auto;
       display: flex;
-      max-width: 482px;
       align-items: flex-start;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       @include pad {
         margin: 24px 24px 30px;
-        align-items: center;
-        width: 100vw;
-        height: auto;
+        width: 100%;
       }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 32px;
-        @include phone {
-          font-size: 1.5rem;
+      .text {
+        max-width: 482px;
+        h1 {
+          font-size: 2.5rem;
+          line-height: 48px;
         }
-      }
-      p {
-        margin-top: 28px;
-        font-size: 1rem;
-        color: #586871;
-        line-height: 28px;
+        p {
+          margin-top: 28px;
+          font-size: 1.1rem;
+          color: #586871;
+          line-height: 28px;
+        }
       }
     }
 
