@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import logoChainVue from "./logo-chain.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
@@ -9,6 +10,7 @@ const { t } = useI18n();
         <h1>{{ t("blockFour.title") }}</h1>
         <p>{{ t("blockFour.content") }}</p>
       </div>
+      <logo-chain-vue></logo-chain-vue>
     </div>
   </div>
 </template>
