@@ -104,7 +104,7 @@ const cardsContent = reactive<Array<card>>([
       justify-content: center;
       .card {
         padding: 40px;
-        width: 380px;
+        width: 360px;
         color: #232323;
         transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         background-color: #fff;
