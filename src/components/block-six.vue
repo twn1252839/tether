@@ -110,7 +110,10 @@ const toggleFaq = (index: number) => {
     align-items: center;
     flex-direction: column;
     @include laptop {
-      padding: 96px 10px;
+      padding: 96px 100px;
+    }
+    @include phone {
+      padding: 96px 20px;
     }
 
     & > .title {
@@ -148,6 +151,10 @@ const toggleFaq = (index: number) => {
             font-style: normal;
             font-weight: 600;
             line-height: 28px;
+            @include phone {
+              font-size: 1rem;
+              line-height: 24px;
+            }
           }
         }
         .content {
