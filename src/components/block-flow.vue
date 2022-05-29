@@ -1,9 +1,13 @@
 <script lang="ts" setup>
 import { computed, toRef } from "vue";
 import { useI18n } from "vue-i18n";
+import otcEN from '../assets/OTC-en.png';
+import otcZH from '../assets/OTC-zh.png';
 const { t } = useI18n();
 const locale = computed(() => {
-  return t("flow.img");
+  const locale = t('flow.img');
+  if (locale === 'en') return otcEN;
+  else return otcZH;
 });
 </script>
 <template>

@@ -37,5 +37,5 @@
   "report.card.sent": "轉帳數",
   "report.card.sent24": "轉帳數(24h)",
   "report.card.tradingValue": "交易額(24h)",
-  "flow.img": "/src/assets/OTC-zh.png"
+  "flow.img": "zh"
 }
