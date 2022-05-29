@@ -22,7 +22,7 @@ const details = reactive<Array<detail>>([
   },
   {
     title: "report.card.tradingValue",
-    value: "1233 USDT",
+    value: "1,233 USDT",
   },
 ]);
 </script>
@@ -35,9 +35,12 @@ const details = reactive<Array<detail>>([
         {{ t("report.title") }}
       </div>
       <div class="details">
-        <p class="walletAddress">{{ t("report.walletAddress") }}</p>
+        <p class="walletAddress">
+          {{ t("report.walletAddress")
+          }}<span>TU3fPq6vKAzYZgAbjwYAt3vTGB9FTdTLJw</span>
+        </p>
         <p class="rating">{{ t("report.creditRating") }}</p>
-        <span class="content">{{ t("report.content") }}</span>
+        <p class="content" v-html="t('report.content')"></p>
       </div>
       <div class="card">
         <p class="account">{{ t("report.card.account") }}</p>
@@ -47,7 +50,7 @@ const details = reactive<Array<detail>>([
           <div class="head">
             <img :src="logo" alt="Tether" />
             <span>Tether USD (USDT)</span>
-            <span>3329437.5</span>
+            <span>3,329,437.5</span>
           </div>
           <div class="list">
             <div class="item" v-for="dt in details">
@@ -99,9 +102,14 @@ const details = reactive<Array<detail>>([
       p {
         margin-bottom: 20px;
       }
+      .walletAddress {
+        span {
+          text-decoration: underline;
+        }
+      }
     }
     .card {
-      margin: 20px 10px;
+      margin: 20px 0;
       border: 1px solid #c5c5c5;
       border-radius: 6px;
       padding: 10px;
@@ -119,10 +127,10 @@ const details = reactive<Array<detail>>([
         overflow: hidden;
       }
       & > span {
-        padding: 5px;
+        padding: 3px 8px;
         border-radius: 5px;
-        color: #00ff62;
-        background-color: #84ffb359;
+        color: #00993b;
+        background-color: #00993b3b;
       }
       .head {
         margin-top: 20px;
