@@ -27,8 +27,14 @@
   "blockSix.faq.3.content":"Tether 代幣是一種資產，可以像其他數字貨幣一樣輕鬆地在區塊鏈中移動，但與現實世界的貨幣一對一地掛鉤。<br><br >Tether 代幣被稱為穩定幣，因為它們與法定貨幣掛鉤，因此價格穩定。這為交易者、商家和基金在退出市場頭寸時提供了低波動性解決方案。<br><br>所有 Tether 代幣都是與匹配的法定貨幣（例如，1 美元₮ = 1 美元）以 1 比 1 掛鉤，並 100% 由 Tether 的儲備支持。<br><br>作為一家完全透明的公司，我們發布每日記錄當前總資產和儲備。",
   "blockSix.faq.4.title": "Tether 支持哪些幣種商品？",
   "blockSix.faq.4.content": "Tether 支持美元 (USD)、歐元、墨西哥比索、離岸人民幣和黃金，分別有以下 Tether 代幣:USD₮、EUR₮、MXN₮、CNH₮和 XAU₮",
-  "report.title": "USDT-TRC20 Account Audit Report",
-  "report.walletAddress": "Tron wallet address TMJfx...",
-  "report.creditRating": "Credit Rating: A",
-  "report.content": "The USDT you hold has been reviewed by Tether, and there is a abnormality after checking the historical transactions. The credit raring is A. Tether can provide a dedicated reserve USD account as a guarantee for free. Your guarantee ID: TEKvt08rk. if you need this service Please contact customer service."
+  "report.title": "USDT-TRC20 帳戶審核與報告",
+  "report.walletAddress": "Tron 錢包地址： TU3fPq6vKAzYZgAbjwYAt3vTGB9FTdTLJw",
+  "report.creditRating": "信用評級: A",
+  "report.content": "您所持有的USDT已通過Tether公司審核，查詢歷史交易紀錄後無任何異常，給予信用評級為A，Tether公司可免費提供專屬儲備美金作為擔保，您的擔保ID: Tekvt08K，若須此服務請洽客服。",
+  "report.card.account": "帳戶",
+  "report.card.rating": "信用評級",
+  "report.card.tradings": "交易數",
+  "report.card.sent": "轉帳數",
+  "report.card.sent24": "轉帳數(24h)",
+  "report.card.tradingValue": "交易額(24h)"
 }

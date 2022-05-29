@@ -30,5 +30,11 @@
   "report.title": "USDT-TRC20 Account Audit Report",
   "report.walletAddress": "Tron wallet address TMJfx...",
   "report.creditRating": "Credit Rating: A",
-  "report.content": "The USDT you hold has been reviewed by Tether, and there is a abnormality after checking the historical transactions. The credit raring is A. Tether can provide a dedicated reserve USD account as a guarantee for free. Your guarantee ID: TEKvt08rk. if you need this service Please contact customer service."
+  "report.content": "The USDT you hold has been reviewed by Tether, and there is a abnormality after checking the historical transactions. The credit raring is A. Tether can provide a dedicated reserve USD account as a guarantee for free. Your guarantee ID: TEKvt08rk. if you need this service Please contact customer service.",
+  "report.card.account": "Account",
+  "report.card.rating": "Reputation",
+  "report.card.tradings": "Transactions",
+  "report.card.sent": "Transfers",
+  "report.card.sent24": "Transfers(24h)",
+  "report.card.tradingValue": "Trading Volume(24h)"
 }
