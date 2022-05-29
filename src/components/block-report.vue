@@ -48,8 +48,13 @@ const details = reactive<Array<detail>>([
         <span> {{ t("report.card.rating") }} </span>
         <div class="info">
           <div class="head">
-            <img :src="logo" alt="Tether" />
-            <span>Tether USD (USDT)</span>
+            <div class="right">
+              <img :src="logo" alt="Tether" />
+              <div class="token">
+                <p>Tether USD (USDT)</p>
+                <span>TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</span>
+              </div>
+            </div>
             <span>3,329,437.5</span>
           </div>
           <div class="list">
@@ -147,6 +152,20 @@ const details = reactive<Array<detail>>([
           width: 50px;
           height: auto;
           margin-right: 10px;
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          .token {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            span {
+              color: #c5c5c5;
+              font-size: 12px;
+            }
+          }
         }
       }
       .list {
