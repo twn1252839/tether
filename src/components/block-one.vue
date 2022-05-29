@@ -9,8 +9,6 @@ const subtitles = [
   "blockOne.subtitle.1",
   "blockOne.subtitle.2",
   "blockOne.subtitle.3",
-  "blockOne.subtitle.4",
-  "blockOne.subtitle.5",
 ];
 </script>
 

