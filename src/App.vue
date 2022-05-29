@@ -2,6 +2,7 @@
 import headerVue from "./components/header.vue";
 import blockOneVue from "./components/block-one.vue";
 import blockReportVue from "./components/block-report.vue";
+import blockFlowVue from "./components/block-flow.vue";
 import blockTwoVue from "./components/block-two.vue";
 import blockThreeVue from "./components/block-three.vue";
 import blockFourVue from "./components/block-four.vue";
@@ -14,6 +15,7 @@ import footerVue from "./components/footer.vue";
   <div class="contents">
     <block-one-vue></block-one-vue>
     <block-report-vue></block-report-vue>
+    <block-flow-vue></block-flow-vue>
     <block-two-vue></block-two-vue>
     <block-three-vue></block-three-vue>
     <block-four-vue></block-four-vue>
@@ -35,7 +37,7 @@ body {
   background-color: #f9fbfb;
   max-width: 100vw;
   min-width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .contents {
   display: flex;
