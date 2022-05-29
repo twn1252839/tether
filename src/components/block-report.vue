@@ -41,17 +41,17 @@ const details = reactive<Array<detail>>([
       </div>
       <div class="card">
         <p class="account">{{ t("report.card.account") }}</p>
-        <p>TU3fPq6vKAzYZgAbjwYAt3vTGB9FTdTLJw</p>
+        <p class="address">TU3fPq6vKAzYZgAbjwYAt3vTGB9FTdTLJw</p>
         <span> {{ t("report.card.rating") }} </span>
         <div class="info">
           <div class="head">
             <img :src="logo" alt="Tether" />
             <span>Tether USD (USDT)</span>
-            <span>3329437.544860</span>
+            <span>3329437.5</span>
           </div>
           <div class="list">
             <div class="item" v-for="dt in details">
-              <span>{{ t(dt.title) }}</span>
+              <span>{{ t(dt.title) }}: </span>
               <span>{{ dt.value }}</span>
             </div>
           </div>
@@ -82,6 +82,7 @@ const details = reactive<Array<detail>>([
     margin: 20px;
     border-radius: 6px;
     @include phone {
+      max-width: 90vw;
       padding: 20px;
     }
 
@@ -101,9 +102,59 @@ const details = reactive<Array<detail>>([
     }
     .card {
       margin: 20px 10px;
-      background-color: #e8e9eb;
+      border: 1px solid #c5c5c5;
       border-radius: 6px;
       padding: 10px;
+      overflow: hidden;
+      .account {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .address {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      & > span {
+        padding: 5px;
+        border-radius: 5px;
+        color: #00ff62;
+        background-color: #84ffb359;
+      }
+      .head {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: 500;
+        @include phone {
+          font-size: 1rem;
+        }
+        img {
+          width: 50px;
+          height: auto;
+          margin-right: 10px;
+        }
+      }
+      .list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        .item {
+          font-size: 1rem;
+          border-top: 1px solid #c5c5c5;
+          padding: 20px 5px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
     }
   }
 }
