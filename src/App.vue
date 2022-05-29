@@ -37,7 +37,7 @@ body {
   background-color: #f9fbfb;
   max-width: 100vw;
   min-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .contents {
   display: flex;
