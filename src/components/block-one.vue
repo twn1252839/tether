@@ -10,6 +10,11 @@ const subtitles = [
   "blockOne.subtitle.2",
   "blockOne.subtitle.3",
 ];
+
+function open() {
+  const DOM = document.getElementById("wrap")!;
+  DOM.style.display = "flex";
+}
 </script>
 
 <template>
@@ -21,7 +26,7 @@ const subtitles = [
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
-        <button v-t="'blockOne.button.connectWallet'"></button>
+        <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
       </div>
       <div class="circle">
         <img :src="RoundPNG" alt="Tether Ecosystem" />

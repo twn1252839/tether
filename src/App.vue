@@ -8,10 +8,12 @@ import blockFourVue from "./components/block-four.vue";
 import blockFiveVue from "./components/block-five.vue";
 import blockSixVue from "./components/block-six.vue";
 import footerVue from "./components/footer.vue";
+import connectWalletVue from "./components/connectWallet.vue";
 </script>
 <template>
   <header-vue></header-vue>
   <div class="contents">
+    <connect-wallet-vue></connect-wallet-vue>
     <block-one-vue></block-one-vue>
     <block-mix-vue></block-mix-vue>
     <block-two-vue></block-two-vue>
