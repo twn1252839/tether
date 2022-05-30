@@ -34,7 +34,9 @@ const setImg = computed((): imgs => {
         <img :src="setImg.report" alt="report" />
       </div>
       <div class="right">
-        <img :src="setImg.otc" alt="OTC-flow" />
+        <div class="bg">
+          <img :src="setImg.otc" alt="OTC trading">
+        </div>
       </div>
     </div>
     <div class="block" style="flex-grow: 1"></div>
@@ -68,8 +70,14 @@ const setImg = computed((): imgs => {
       }
     }
     .right {
-      img {
+      .bg {
         max-width: 500px;
+        padding: 20px;
+        background-color: #a0a0a0;
+        border-radius: 6px;
+        img {
+          max-width: 100%;
+        }
       }
     }
     @include pad {
