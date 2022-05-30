@@ -37,5 +37,6 @@
   "report.card.sent": "转帐数",
   "report.card.sent24": "转帐数(24h)",
   "report.card.tradingValue": "交易额(24h)",
-  "flow.img": "zh"
+  "flow.img": "zh",
+  "connectWallet": "连结钱包"
 }
