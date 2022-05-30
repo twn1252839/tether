@@ -31,6 +31,7 @@ const details = reactive<Array<detail>>([
   <div class="blockReport">
     <div class="block"></div>
     <div class="contain">
+      <div class="watermark"></div>
       <div class="title">
         {{ t("report.title") }}
       </div>
@@ -82,6 +83,21 @@ const details = reactive<Array<detail>>([
   }
   .contain {
     background-color: #fff;
+    position: relative;
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 50%;
+      background: url("/src/assets/logo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.2;
+    }
+    background-blend-mode: saturation;
     padding: 40px;
     width: 840px;
     max-width: 840px;
