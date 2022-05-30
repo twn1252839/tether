@@ -10,11 +10,11 @@ interface detail {
 const details = reactive<Array<detail>>([
   {
     title: "report.card.tradings",
-    value: "120",
+    value: "<span style='color: red;'>150</span>",
   },
   {
     title: "report.card.sent",
-    value: "150",
+    value: `<span style='color: red;'>122</span> ( <span style='color: green; font-size: 2rem'>↓</span>76Txn <span style='color: red; font-size: 2rem'>↑</span>46Txn)`,
   },
   {
     title: "report.card.sent24",
@@ -52,16 +52,16 @@ const details = reactive<Array<detail>>([
             <div class="right">
               <img :src="logo" alt="Tether" />
               <div class="token">
-                <p>Tether USD (USDT)</p>
+                <p>Tether USD (USDT) <span>TRC20</span> </p>
                 <span>TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</span>
               </div>
             </div>
-            <span>3,329,437.5</span>
+            <span>2,9437.924752</span>
           </div>
           <div class="list">
             <div class="item" v-for="dt in details">
               <span>{{ t(dt.title) }}: </span>
-              <span>{{ dt.value }}</span>
+              <span v-html="dt.value"></span>
             </div>
           </div>
         </div>
@@ -177,6 +177,16 @@ const details = reactive<Array<detail>>([
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            p{
+              font-size: 20px;
+              line-height: 25px;
+              span {
+                background-color: #ffcece;
+                padding: 2px;
+                border-radius: 3px;
+                color: #8f8f8f;
+              }
+            }
             span {
               color: #c5c5c5;
               font-size: 12px;

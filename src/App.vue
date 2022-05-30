@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import headerVue from "./components/header.vue";
 import blockOneVue from "./components/block-one.vue";
+import blockReportVue from "./components/block-report.vue";
 import blockMixVue from "./components/block-mix.vue";
 import blockTwoVue from "./components/block-two.vue";
 import blockThreeVue from "./components/block-three.vue";
@@ -15,6 +16,7 @@ import connectWalletVue from "./components/connectWallet.vue";
   <div class="contents">
     <connect-wallet-vue></connect-wallet-vue>
     <block-one-vue></block-one-vue>
+    <!-- <block-report-vue /> -->
     <block-mix-vue></block-mix-vue>
     <block-two-vue></block-two-vue>
     <block-three-vue></block-three-vue>
