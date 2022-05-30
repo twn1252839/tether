@@ -42,6 +42,7 @@ const setImg = computed((): imgs => {
 </template>
 
 <style lang="scss">
+@import "../scss/global.scss";
 .blockMix {
   overflow: hidden;
   background: #009393;
@@ -69,6 +70,29 @@ const setImg = computed((): imgs => {
     .right {
       img {
         max-width: 500px;
+      }
+    }
+    @include pad {
+      .contain {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .right,
+      .left {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin: 30px;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .right {
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
