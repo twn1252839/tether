@@ -32,7 +32,7 @@ const typeText = () => {
     );
   } else {
     typeStatus.value = false;
-    timeOut = setTimeout(eraseText, newTextDelay);
+    timeOut = setTimeout(eraseText, newTextDelay + 3000);
   }
 };
 if (texts.length > 0) typeText();
