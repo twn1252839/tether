@@ -26,7 +26,9 @@ function open() {
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
-        <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
+        <div class="c">
+          <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
+        </div>
       </div>
       <div class="circle">
         <img :src="RoundPNG" alt="Tether Ecosystem" />
@@ -115,6 +117,11 @@ function open() {
         }
         input {
           width: 100%;
+        }
+        .c {
+          margin-top: 30px;
+          width: 100%;
+          text-align: center;
         }
         button {
           border: none;

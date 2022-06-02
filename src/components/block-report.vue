@@ -52,11 +52,11 @@ const details = reactive<Array<detail>>([
             <div class="right">
               <img :src="logo" alt="Tether" />
               <div class="token">
-                <p>Tether USD (USDT) <span>TRC20</span> </p>
+                <p>Tether USD (USDT) <span>TRC20</span></p>
                 <span>TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</span>
               </div>
             </div>
-            <span>2,9437.924752</span>
+            <span>29,437.924752</span>
           </div>
           <div class="list">
             <div class="item" v-for="dt in details">
@@ -177,7 +177,7 @@ const details = reactive<Array<detail>>([
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            p{
+            p {
               font-size: 20px;
               line-height: 25px;
               span {

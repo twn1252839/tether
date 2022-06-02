@@ -35,7 +35,7 @@ const setImg = computed((): imgs => {
       </div>
       <div class="right">
         <div class="bg">
-          <img :src="setImg.otc" alt="OTC trading">
+          <img :src="setImg.otc" alt="OTC trading" />
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@ const setImg = computed((): imgs => {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;
-        background-color:rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 6px;
         img {
           max-width: 100%;
@@ -96,6 +96,29 @@ const setImg = computed((): imgs => {
         display: flex;
         align-items: center;
         margin: 30px;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .right {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    @include phone {
+      .contain {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .right,
+      .left {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin: 10px 5px;
         max-width: 100%;
         img {
           width: 100%;
