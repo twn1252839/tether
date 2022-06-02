@@ -102,6 +102,9 @@ const cardsContent = reactive<Array<card>>([
       overflow-y: hidden;
       align-items: center;
       justify-content: center;
+      @include phone {
+        justify-content: flex-start;
+      }
       .card {
         padding: 40px;
         width: 360px;
@@ -110,6 +113,9 @@ const cardsContent = reactive<Array<card>>([
         background-color: #fff;
         border-radius: 6px;
         flex-grow: 0;
+        @include phone {
+          height: 100%;
+        }
         &:not(:first-child) {
           margin-left: 20px;
         }
