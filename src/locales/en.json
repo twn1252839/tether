@@ -38,5 +38,6 @@
   "report.card.sent24": "Transfers(24h)",
   "report.card.tradingValue": "Trading Volume(24h)",
   "flow.img": "en",
-  "connectWallet": "Connect Wallet"
+  "connectWallet": "Connect Wallet",
+  "FAQ": "FAQs"
 }

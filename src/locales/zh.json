@@ -13,11 +13,11 @@
   "blockFour.title": "广泛採用",
   "blockFour.content": "从第一个到最常用的稳定币，以及按交易量计算的交易量最大的代币之一，Tether 代币已经走过了漫长的道路。 Tether 代币是当今主要交易所、场外交易柜檯和钱包中採用最广泛的稳定币，包括：",
   "blockFive.title": "颠复全球金融业的代币",
-  "blockFive.card.1.title": "个人繫绳",
+  "blockFive.card.1.title": "个人",
   "blockFive.card.1.content": "Tether 代币在一级交易所提供卓越的流动性，使交易者能够在最快的时间内利用套利机会。",
-  "blockFive.card.2.title": "Tether for Merchants",
+  "blockFive.card.2.title": "商戶",
   "blockFive.card.2.content": "对于商家来说，整合 Tether 代币为消费者提供了一系列购买产品和服务的机会。",
-  "blockFive.card.3.title": "Tether for Exchange",
+  "blockFive.card.3.title": "交易所",
   "blockFive.card.3.content": "Tether 代币在数字代币生态系统中发挥着举足轻重的作用，就 24 小时交易量而言是最活跃的。",
   "blockSix.faq.1.title": "什麽是 Tether?",
   "blockSix.faq.1.content": "Tether 于 2014 年推出，是一个支持区块链的平台，旨在促进以数字方式使用法定货币。Tether 致力于通过更现代的货币方式来颠复传统的金融体系. Tether 通过让客户能够跨区块链与传统货币进行交易而取得了进展，而没有通常与数字货币相关的固有波动性和復杂性。作为第一个促进传统货币数字化使用的区块链平台（一个熟悉的，稳定的会计单位），Tether 已经使跨区块链的跨境交易民主化。",
@@ -38,5 +38,6 @@
   "report.card.sent24": "转帐数(24h)",
   "report.card.tradingValue": "交易额(24h)",
   "flow.img": "zh",
-  "connectWallet": "连结钱包"
+  "connectWallet": "连结钱包",
+  "FAQ": "問與答"
 }

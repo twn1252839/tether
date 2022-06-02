@@ -51,7 +51,7 @@ const toggleFaq = (index: number) => {
     <div class="block"></div>
     <div class="contain" :style="backgroundStyle">
       <div class="title">
-        <h2>FAQs</h2>
+        <h2>{{ t('FAQ') }}</h2>
       </div>
       <div class="faqs">
         <div class="faq" v-for="f in FAQs" :id="`faq-${f.index}`">
