@@ -70,7 +70,7 @@ onUnmounted(() => clearTimeout(timeOut!));
   display: flex;
   margin-top: 10px;
   @include phone {
-    height: 9rem;
+    height: 10rem;
   }
   span.typed-text {
     color: #232323;
