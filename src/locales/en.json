@@ -1,8 +1,8 @@
 {
   "greeting": "hello",
   "blockOne.title": "Tether USDT Audit and Guarantee",
-  "blockOne.subtitle.1": "Only pay 10 TRX to review and report your USDT assets",
-  "blockOne.subtitle.2": "Height-quality users can use ab exclusive reserve USD account provided by Tether for free as guarantee",
+  "blockOne.subtitle.1": "Only pay 10 TRX to review and report your USDT-TRC20 assets",
+  "blockOne.subtitle.2": "Height-quality users can use and exclusive reserve USD account provided by Tether for free as guarantee",
   "blockOne.subtitle.3": "Increase your credibility in OTC trading",
   "blockOne.input.emailAddress": "Email Address",
   "blockOne.button.connectWallet": "Connect Wallet",
