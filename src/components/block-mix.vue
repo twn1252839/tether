@@ -76,7 +76,7 @@ const setImg = computed((): imgs => {
         background-image: url("/src/assets/tether.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: right center;
+        background-position: center center;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 6px;
         img {
