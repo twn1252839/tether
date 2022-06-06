@@ -24,9 +24,9 @@ const cardsContent = reactive<Array<card>>([
     content: "blockFive.card.2.content",
   },
   {
-    title: "blockFive.card.2.title",
+    title: "blockFive.card.3.title",
     svgSource: illus3,
-    content: "blockFive.card.2.content",
+    content: "blockFive.card.3.content",
   },
 ]);
 </script>
