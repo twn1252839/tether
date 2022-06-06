@@ -19,11 +19,11 @@
   "blockFive.card.2.content": "对于商家来说，整合 Tether 代币为消费者提供了一系列购买产品和服务的机会。",
   "blockFive.card.3.title": "交易所",
   "blockFive.card.3.content": "Tether 代币在数字代币生态系统中发挥着举足轻重的作用，就 24 小时交易量而言是最活跃的。",
-  "blockSix.faq.1.title": "什麽是 Tether?",
+  "blockSix.faq.1.title": "什么是 Tether?",
   "blockSix.faq.1.content": "Tether 于 2014 年推出，是一个支持区块链的平台，旨在促进以数字方式使用法定货币。Tether 致力于通过更现代的货币方式来颠复传统的金融体系. Tether 通过让客户能够跨区块链与传统货币进行交易而取得了进展，而没有通常与数字货币相关的固有波动性和復杂性。作为第一个促进传统货币数字化使用的区块链平台（一个熟悉的，稳定的会计单位），Tether 已经使跨区块链的跨境交易民主化。",
   "blockSix.faq.2.title": "Tether 代币的工作原理",
   "blockSix.faq.2.content": "Tether 代币作为建立在多个领先区块链上的数字代币存在，包括 Algorand、比特币现金的简单账本协议 (SLP)、以太坊、EOS、Liquid Network、Omni、Tron 和 Solana。这些传输协议由与区块链接口的开源软件组成，以允许发行和赎回 Tether 代币。<br><br>每个 Tether 代币都 100% 由我们的储备支持，其中包括传统货币和现金等价物，并可能包括其他Tether 向第三方提供的贷款的资产和应收账款。<br><br>当流通中的所有 Tether 代币的总和小于或等于我们的储备价值时，Tether 平台将被完全保留。通过我们的透明度页面，任何人都可以每天查看这两个数字。<br><br>Tether 最初是为了使用比特币网络作为其传输协议（特别是 Omni 层）而创建的，以允许进行代币化的传统货币的交易。最终版本的 Tether 使用比特币区块链，它继承了建立时间最长的区块鍊网络固有的稳定性和安全性。<br><br>以太坊区块链上的 Tether 作为 ERC20 代币，是一个更新的传输层，现在使 Tether以太坊智能合约或以太坊上的去中心化应用程序中可用的代币。作为标准的 ERC20 代币，它也可以发送到任何以太坊地址。<br><br>由于 Tether 代币目前使用不同的传输协议，当用户将 Tether 代币发送到其他地址时，他们需要仔细检查目标地址以确认他们选择了正确的传输协议。",
-  "blockSix.faq.3.title": "什麽是 Tether 代币？",
+  "blockSix.faq.3.title": "什么是 Tether 代币？",
   "blockSix.faq.3.content": "Tether 代币是一种资产，可以像其他数字货币一样轻松地在区块链中移动，但与现实世界的货币一对一地挂钩。<br><br >Tether 代币被称为稳定币，因为它们与法定货币挂钩，因此价格稳定。这为交易者、商家和基金在退出市场头寸时提供了低波动性解决方案。<br><br>所有 Tether 代币都是与匹配的法定货币（例如，1 美元₮ = 1 美元）以 1 比 1 挂钩，并 100% 由 Tether 的储备支持。<br><br>作为一家完全透明的公司，我们发布每日记录当前总资产和储备。",
   "blockSix.faq.4.title": "Tether 支持哪些币种商品？",
   "blockSix.faq.4.content": "Tether 支持美元 (USD)、欧元、墨西哥比索、离岸人民币和黄金，分别有以下 Tether 代币:USD₮、EUR₮、MXN₮、CNH₮和 XAU₮",
@@ -39,5 +39,5 @@
   "report.card.tradingValue": "交易额(24h)",
   "flow.img": "zh",
   "connectWallet": "连结钱包",
-  "FAQ": "問與答"
+  "FAQ": "常见问题"
 }
