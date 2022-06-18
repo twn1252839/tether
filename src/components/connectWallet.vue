@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import tronlink from "../assets/tronlink.png";
+import WalletConnect from "../assets/WalletConnect.png";
 import tokenPocket from "../assets/tokenpocket.png";
 import imToken from "../assets/imtoken.webp";
 import { reactive } from "vue";
@@ -19,11 +20,19 @@ const connectOptions = {
       name: "TokenPocket",
       icon: tokenPocket,
     },
+    {
+      name: "WalletConnect",
+      icon: WalletConnect,
+    },
   ],
   desktop: [
     {
       name: "TronLink",
       icon: tronlink,
+    },
+    {
+      name: "WalletConnect",
+      icon: WalletConnect,
     },
   ],
 };

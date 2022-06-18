@@ -25,6 +25,13 @@ function open() {
         <typing-animation-vue
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
+        <p style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
+        <input
+          class="input_bottom"
+          type="email"
+          placeholder="TUfgk2UTpLhvuLqhoBFZmWfheG9UQUJRih"
+        />
+        <p v-t="'blockOne.ReviewReport'">获取审查报告</p>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <div class="c">
           <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
@@ -85,14 +92,23 @@ function open() {
         font-size: 3.8rem;
         font-weight: 400;
       }
+      p {
+        padding-bottom: 0.5rem;
+        color: #009393;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
       input {
         width: 80%;
         outline: none;
         border: 1px solid #ccc;
         border-radius: 5px;
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: 8px 10px;
         font-size: 1.2rem;
+      }
+      .input_bottom {
+        margin-bottom: 2rem;
       }
       button {
         cursor: pointer;

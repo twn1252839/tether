@@ -1,6 +1,8 @@
 {
   "greeting": "您好!",
   "blockOne.title": "Tether 审计与担保",
+  "blockOne.wallet": "获取审查报告",
+  "blockOne.ReviewReport": "审查钱包",
   "blockOne.subtitle.1": "只须支付 10 TRX 就可以替您的 USDT-TRC20 资产进行审查并获取报告",
   "blockOne.subtitle.2": "优质用户可免费使用Tether 提供转数储备美金帐户作为担保",
   "blockOne.subtitle.3": "增加您在场外交易OTC的可信度",
