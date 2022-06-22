@@ -79,7 +79,7 @@ onUnmounted(() => clearTimeout(timeOut!));
     white-space: pre-line;
     height: 3rem;
     display: inline-table;
-    line-height: 3rem;
+    line-height: 2.2rem;
     @include phone {
       font-size: 1.8rem;
       line-height: 1.8rem;

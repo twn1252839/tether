@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import logoSVG from "../assets/logo.svg";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+// import backgroundImage from "../assets/bg1.svg";
 </script>
 
 <template>
@@ -9,57 +12,96 @@ import logoSVG from "../assets/logo.svg";
         <img :src="logoSVG" alt="Tether" />
       </div>
       <div class="links p-0">
-        <div class="uk-inline px-2 px-md-3">
-          <button
-            class="uk-button uk-button-default border-0 opHover px-0"
-            type="button"
-            style="color: #e4e5e8"
-            aria-expanded="false"
-          >
-            <img
-              class="imgSet"
-              src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
-              alt=""
-            /><span class="pl-2">ETH</span
-            ><i class="fa-solid fa-chevron-down pl-2 fontAS"></i>
-          </button>
-          <div
-            uk-dropdown="mode: click"
-            class="border border-dark rounded p-0 uk-dropdown"
-            style="min-width: 60px"
-          >
-            <div class="w-100 text-center lauHover p-1">
-              <a class="text-light text-decoration-none a_active p-1" href="#"
-                ><img
-                  class="imgSet"
-                  src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
-                  alt=""
-                /><span class="pl-2">ETH</span></a
-              >
-            </div>
-            <div class="w-100 text-center lauHover p-1">
-              <a class="text-light text-decoration-none" href="#"
-                ><img
-                  class="imgSet"
-                  src="https://coin.top/production/logo/trx.png"
-                  alt=""
-                /><span class="pl-2">TRON</span></a
-              >
-            </div>
-          </div>
-        </div>
         <div class="telegram">
           <i class="bx bxl-telegram bx-tada"></i>
         </div>
-        <select v-model="$i18n.locale" class="m-0 px-1 px-md-3">
+        <!-- <div class="">
+          <button
+            type="button"
+            class="btn dropdown-toggle bg-transparent"
+            data-toggle="dropdown"
+          >
+            <img
+              src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
+              alt=""
+              class="imgSet"
+            />
+            <span class="fsz">ETH</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">
+              <img
+                src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
+                alt=""
+                class="imgSet"
+              />
+              <span class="fsz">ETH</span>
+            </button>
+            <button class="dropdown-item" type="button">
+              <img
+                src="https://coin.top/production/logo/trx.png"
+                alt=""
+                class="imgSet"
+              />
+              <span class="fsz">TRON</span>
+            </button>
+          </div>
+        </div> -->
+        <select v-model="$i18n.locale" class="fsz20 m-0 px-1 px-md-1 ml-1">
           <option
             v-for="locale in $i18n.availableLocales"
             :key="`locale-${locale}`"
             :value="locale"
+            class="fsz20"
           >
             {{ locale }}
           </option>
         </select>
+        <!-- <span class="" id="wOne">
+          <button
+            type="button"
+            class="btn dropdown-toggle bg-transparent"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fsz">en</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">
+              <span class="fsz">en</span>
+            </button>
+            <button class="dropdown-item" type="button">
+              <span class="fsz">zh</span>
+            </button>
+            <button class="dropdown-item" type="button">
+              <span class="fsz">vn</span>
+            </button>
+          </div>
+        </span> -->
+        <!-- 測試 -->
+        <!-- <span class="" id="wOne">
+          <button
+            type="button"
+            class="btn dropdown-toggle bg-transparent"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fsz">en</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" v-model="$i18n.locale">
+            <button
+              v-for="locale in $i18n.availableLocales"
+              :key="`locale-${locale}`"
+              :value="locale"
+              class="dropdown-item"
+              type="button"
+            >
+              {{ locale }}
+            </button>
+          </div>
+        </span> -->
       </div>
     </nav>
   </div>
@@ -117,10 +159,48 @@ import logoSVG from "../assets/logo.svg";
   display: flex;
   align-items: center;
   @include phone {
-    width: 150px;
+    width: 200px;
   }
 }
 .a_active {
   // background-color: rgb(162, 162, 222);
+}
+#wOne .dropdown-menu-right {
+  width: 50px;
+  min-width: 50px;
+  margin: 0;
+  padding: 0;
+}
+#wOne .dropdown-menu-right button {
+  padding: 0 1rem;
+}
+.dropdown-menu-right {
+  width: 50px;
+  min-width: 110px;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-menu-right button {
+  padding: 0.5rem 1.25rem;
+}
+.logo img {
+  width: 100%;
+  @include phone {
+    width: 85%;
+  }
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.dropdown-item img {
+  padding-right: 5px;
+}
+.fsz {
+  font-size: 15px !important;
+}
+.fsz20 {
+  font-size: 20px !important;
 }
 </style>

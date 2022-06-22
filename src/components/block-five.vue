@@ -38,11 +38,11 @@ const cardsContent = reactive<Array<card>>([
       <div class="title">
         <h1>{{ t("blockFive.title") }}</h1>
       </div>
-      <div class="cardsA">
-        <div class="cardA" v-for="card in cardsContent">
-          <div class="titleBarA row">
-            <h2 class="col-6">{{ t(card.title) }}</h2>
-            <img :src="card.svgSource" alt="illus" class="col-6 img-fluid" />
+      <div class="cards">
+        <div class="card" v-for="card in cardsContent">
+          <div class="titleBar">
+            <h2 class="">{{ t(card.title) }}</h2>
+            <img :src="card.svgSource" alt="illus" class="img-fluid" />
           </div>
           <p>{{ t(card.content) }}</p>
         </div>
@@ -84,13 +84,13 @@ const cardsContent = reactive<Array<card>>([
           font-size: 1.375rem;
         }
       }
-      & > .cardsA {
+      & > .cards {
         display: flex;
         width: 100%;
         overflow-x: auto;
       }
     }
-    .cardsA {
+    .cards {
       margin: 10px;
       display: flex;
       flex-direction: row;
@@ -105,21 +105,27 @@ const cardsContent = reactive<Array<card>>([
       @include phone {
         justify-content: flex-start;
       }
-      .cardA {
+      .card {
         padding: 40px;
         width: 360px;
+        min-width: 360px;
+        height: 280px;
+        min-height: 280px;
+        // border: 1px solid #009393;
         color: #232323;
         transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         background-color: #fff;
         border-radius: 6px;
         flex-grow: 0;
         @include phone {
+          width: 300px;
+          min-width: 300px;
           height: 100%;
         }
         &:not(:first-child) {
           margin-left: 20px;
         }
-        .titleBarA {
+        .titleBar {
           display: flex;
           align-items: flex-start;
           margin-bottom: 16px;

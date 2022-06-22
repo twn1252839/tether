@@ -24,17 +24,34 @@ function open() {
         <h1 v-t="'blockOne.title'"></h1>
         <typing-animation-vue
           :i18n-text-keys="subtitles"
+          class="mb-3"
         ></typing-animation-vue>
-        <p style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
-        <input
-          class="input_bottom"
-          type="email"
-          placeholder="TUfgk2UTpLhvuLqhoBFZmWfheG9UQUJRih"
-        />
-        <p v-t="'blockOne.ReviewReport'">获取审查报告</p>
+        <form class="mb-1" action="" method="post">
+          <input type="radio" name="ETH" id="ETH" class="w-auto" checked />
+          <img
+            src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
+            alt=""
+            class="imgSet"
+          />
+          <label for="ETH">ETH</label>
+          <input type="radio" name="ETH" id="TRON" class="w-auto ml-5" />
+          <img
+            src="https://coin.top/production/logo/trx.png"
+            alt=""
+            class="imgSet"
+          />
+          <label for="TRON">TRON</label>
+        </form>
+        <p class="p-0 m-0" style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
+        <input class="input_bottom" type="email" placeholder="" />
+        <p class="p-0 m-0" v-t="'blockOne.ReviewReport'">获取审查报告</p>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <div class="c">
-          <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
+          <button
+            class="px-4 py-3 w-100 vw-100"
+            @click="open"
+            v-t="'blockOne.button.connectWallet'"
+          ></button>
         </div>
       </div>
       <div class="circle">
@@ -160,5 +177,9 @@ function open() {
       }
     }
   }
+}
+.imgSet {
+  height: 22px;
+  margin: 0 5px 3px 15px;
 }
 </style>
